@@ -4,7 +4,7 @@ A blazing-fast, fully-featured Markdown preview extension for MSCode. Experience
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Real-time Live Preview:** Instantly see your markdown changes as you type.
 * **Synchronized Scrolling:** The preview automatically scrolls to match your editor's cursor position.
@@ -29,7 +29,7 @@ A blazing-fast, fully-featured Markdown preview extension for MSCode. Experience
 
 ---
 
-## 🎯 Commands
+## Commands
 
 Access these commands from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) or via the Editor Title Bar menu:
 
@@ -43,7 +43,7 @@ Access these commands from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) 
 
 ---
 
-## ⚙️ Configuration / Settings
+## Configuration / Settings
 
 Customize the previewer exactly how you want it. Go to **Settings > Markdown Preview**:
 
