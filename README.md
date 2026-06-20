@@ -4,7 +4,11 @@ A blazing-fast, fully-featured Markdown preview extension for MSCode. Experience
 
 ---
 
+<<<<<<< HEAD
 ## 🚀 Key Features
+=======
+## Key Features
+>>>>>>> 6f1094c1579ecbeb497d6e4d791c9bc8c71c15f7
 
 * **Real-time Live Preview:** Instantly see your markdown changes as you type.
 * **Synchronized Scrolling:** The preview automatically scrolls to match your editor's cursor position.
@@ -29,7 +33,11 @@ A blazing-fast, fully-featured Markdown preview extension for MSCode. Experience
 
 ---
 
+<<<<<<< HEAD
 ## 🎯 Commands
+=======
+## Commands
+>>>>>>> 6f1094c1579ecbeb497d6e4d791c9bc8c71c15f7
 
 Access these commands from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) or via the Editor Title Bar menu:
 
@@ -43,7 +51,11 @@ Access these commands from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) 
 
 ---
 
+<<<<<<< HEAD
 ## ⚙️ Configuration / Settings
+=======
+## Configuration / Settings
+>>>>>>> 6f1094c1579ecbeb497d6e4d791c9bc8c71c15f7
 
 Customize the previewer exactly how you want it. Go to **Settings > Markdown Preview**:
 
@@ -122,4 +134,8 @@ npm run package  # To bundle the .msxt extension file
 
 ## 👨‍💻 Author
 
+<<<<<<< HEAD
 Developed by **Sourav Chand** Powered by `react-markdown`, `rehype`, `remark`, and `mermaid`.
+=======
+Developed by **Sourav Chand** Powered by `react-markdown`, `rehype`, `remark`, and `mermaid`.
+>>>>>>> 6f1094c1579ecbeb497d6e4d791c9bc8c71c15f7
