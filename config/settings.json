@@ -1,0 +1,361 @@
+{
+  "markdown.preview.theme": {
+    "type": "select",
+    "defaultValue": "auto",
+    "title": "Preview Theme",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 100,
+    "description": "Colour theme used inside the preview pane.",
+    "enum": ["auto", "light", "dark", "github", "sepia", "solarized"],
+    "enumItemLabels": ["Match Workbench", "Light", "Dark", "GitHub", "Sepia", "Solarized"]
+  },
+  "markdown.preview.fontFamily": {
+    "type": "string",
+    "defaultValue": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    "title": "Font Family",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 110,
+    "description": "Font family used for rendered preview text."
+  },
+  "markdown.preview.fontSize": {
+    "type": "number",
+    "defaultValue": 16,
+    "minimum": 10,
+    "maximum": 28,
+    "title": "Font Size",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 120,
+    "description": "Base font size (px) for preview body text."
+  },
+  "markdown.preview.lineHeight": {
+    "type": "number",
+    "defaultValue": 1.6,
+    "minimum": 1.2,
+    "maximum": 2.4,
+    "title": "Line Height",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 130,
+    "description": "Line height multiplier for body text."
+  },
+  "markdown.preview.maxWidth": {
+    "type": "number",
+    "defaultValue": 850,
+    "minimum": 0,
+    "title": "Max Content Width",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 140,
+    "markdownDescription": "Maximum width (px) of the preview content column. Set to `0` for full width."
+  },
+  "markdown.preview.codeFontFamily": {
+    "type": "string",
+    "defaultValue": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace",
+    "title": "Code Font Family",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 150,
+    "description": "Font family used inside fenced code blocks."
+  },
+  "markdown.preview.codeTheme": {
+    "type": "select",
+    "defaultValue": "github-dark",
+    "title": "Code Block Theme",
+    "category": "Markdown Preview",
+    "subCategory": "Appearance",
+    "order": 160,
+    "description": "Syntax highlighting colour scheme for code blocks.",
+    "enum": ["github-dark", "github", "dracula", "monokai", "nord", "one-dark", "vs2015"],
+    "enumItemLabels": ["GitHub Dark", "GitHub Light", "Dracula", "Monokai", "Nord", "One Dark", "VS2015"]
+  },
+  "markdown.preview.autoRefresh": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Auto Refresh",
+    "category": "Markdown Preview",
+    "subCategory": "Behavior",
+    "order": 200,
+    "description": "Automatically re-render the preview when the source file changes."
+  },
+  "markdown.preview.refreshDelay": {
+    "type": "number",
+    "defaultValue": 400,
+    "minimum": 100,
+    "maximum": 5000,
+    "title": "Refresh Delay (ms)",
+    "category": "Markdown Preview",
+    "subCategory": "Behavior",
+    "order": 210,
+    "description": "Debounce delay before re-checking the file for changes."
+  },
+  "markdown.preview.syncScroll": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Sync Scroll With Editor",
+    "category": "Markdown Preview",
+    "subCategory": "Behavior",
+    "order": 220,
+    "markdownDescription": "Scroll the preview to follow the editor's visible line range. Requires editor scroll-position support — falls back silently if unavailable."
+  },
+  "markdown.preview.breakOnSingleNewline": {
+    "type": "boolean",
+    "defaultValue": false,
+    "title": "Single Line Break = New Line",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 300,
+    "description": "Treat a single newline as a <br> (GitHub comment-style breaks) instead of requiring a blank line."
+  },
+  "markdown.preview.enableTaskLists": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Enable Task Lists",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 310,
+    "description": "Render '- [ ]' / '- [x]' as interactive checkboxes."
+  },
+  "markdown.preview.taskListsReadonly": {
+    "type": "boolean",
+    "defaultValue": false,
+    "title": "Task Lists Read-Only",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 320,
+    "markdownDescription": "When disabled, checking a box writes `[x]`/`[ ]` back to the source file. When enabled, checkboxes are display-only."
+  },
+  "markdown.preview.enableEmoji": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Enable Emoji Shortcodes",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 330,
+    "markdownDescription": "Convert shortcodes like `:smile:` into emoji."
+  },
+  "markdown.preview.enableMath": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Enable Math (KaTeX)",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 340,
+    "markdownDescription": "Render `$inline$` and `$$block$$` math expressions using KaTeX."
+  },
+  "markdown.preview.enableMermaid": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Enable Mermaid Diagrams",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 350,
+    "markdownDescription": "Render ```mermaid\\n``` code fences as flowcharts, sequence diagrams, etc."
+  },
+  "markdown.preview.headingAnchors": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Heading Anchor Links",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 360,
+    "description": "Show a clickable '#' link next to each heading for deep-linking."
+  },
+  "markdown.preview.smartQuotes": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Smart Typography",
+    "category": "Markdown Preview",
+    "subCategory": "Markdown Features",
+    "order": 370,
+    "description": "Convert straight quotes, double hyphens, and ellipses into their typographic equivalents."
+  },
+  "markdown.preview.showLineNumbers": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Show Line Numbers",
+    "category": "Markdown Preview",
+    "subCategory": "Code Blocks",
+    "order": 400,
+    "description": "Display line numbers in the gutter of fenced code blocks."
+  },
+  "markdown.preview.copyCodeButton": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Copy Code Button",
+    "category": "Markdown Preview",
+    "subCategory": "Code Blocks",
+    "order": 410,
+    "description": "Show a copy-to-clipboard button on hover over code blocks."
+  },
+  "markdown.preview.wrapLongLines": {
+    "type": "boolean",
+    "defaultValue": false,
+    "title": "Wrap Long Code Lines",
+    "category": "Markdown Preview",
+    "subCategory": "Code Blocks",
+    "order": 420,
+    "description": "Wrap long lines inside code blocks instead of showing a horizontal scrollbar."
+  },
+  "markdown.preview.showTableOfContents": {
+    "type": "boolean",
+    "defaultValue": false,
+    "title": "Show Table of Contents",
+    "category": "Markdown Preview",
+    "subCategory": "Table of Contents",
+    "order": 500,
+    "description": "Display an auto-generated, clickable table of contents alongside the preview."
+  },
+  "markdown.preview.tocPosition": {
+    "type": "select",
+    "defaultValue": "right",
+    "title": "TOC Position",
+    "category": "Markdown Preview",
+    "subCategory": "Table of Contents",
+    "order": 510,
+    "enum": ["right", "left", "floating"],
+    "enumItemLabels": ["Right Sidebar", "Left Sidebar", "Floating Panel"]
+  },
+  "markdown.preview.tocMinDepth": {
+    "type": "number",
+    "defaultValue": 1,
+    "minimum": 1,
+    "maximum": 6,
+    "title": "TOC Minimum Heading Level",
+    "category": "Markdown Preview",
+    "subCategory": "Table of Contents",
+    "order": 520
+  },
+  "markdown.preview.tocMaxDepth": {
+    "type": "number",
+    "defaultValue": 3,
+    "minimum": 1,
+    "maximum": 6,
+    "title": "TOC Maximum Heading Level",
+    "category": "Markdown Preview",
+    "subCategory": "Table of Contents",
+    "order": 530
+  },
+  "markdown.preview.imageMaxWidth": {
+    "type": "string",
+    "defaultValue": "100%",
+    "title": "Image Max Width",
+    "category": "Markdown Preview",
+    "subCategory": "Images & Links",
+    "order": 600,
+    "markdownDescription": "CSS max-width applied to all images (e.g. `100%`, `600px`)."
+  },
+  "markdown.preview.lazyLoadImages": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Lazy-Load Images",
+    "category": "Markdown Preview",
+    "subCategory": "Images & Links",
+    "order": 610,
+    "description": "Defer loading off-screen images until scrolled into view."
+  },
+  "markdown.preview.openLinksExternally": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Open Links Externally",
+    "category": "Markdown Preview",
+    "subCategory": "Images & Links",
+    "order": 620,
+    "description": "Open http(s) links in the system browser instead of inside the IDE."
+  },
+  "markdown.preview.frontmatter.style": {
+    "type": "select",
+    "defaultValue": "table",
+    "title": "Front Matter Display",
+    "category": "Markdown Preview",
+    "subCategory": "Front Matter",
+    "order": 700,
+    "enum": ["table", "raw", "hidden"],
+    "enumItemLabels": ["Styled Table", "Raw YAML Block", "Hidden"],
+    "description": "How YAML front matter at the top of the file is displayed."
+  },
+  "markdown.preview.showWordCount": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Show Word Count",
+    "category": "Markdown Preview",
+    "subCategory": "Status Info",
+    "order": 800
+  },
+  "markdown.preview.showReadingTime": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Show Reading Time",
+    "category": "Markdown Preview",
+    "subCategory": "Status Info",
+    "order": 810
+  },
+  "markdown.preview.wordsPerMinute": {
+    "type": "number",
+    "defaultValue": 200,
+    "minimum": 100,
+    "maximum": 500,
+    "title": "Reading Speed (wpm)",
+    "category": "Markdown Preview",
+    "subCategory": "Status Info",
+    "order": 820,
+    "description": "Average words-per-minute used to estimate reading time."
+  },
+  "markdown.security.allowRawHtml": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Allow Raw HTML",
+    "category": "Markdown Preview",
+    "subCategory": "Security",
+    "order": 900,
+    "description": "Render raw HTML tags embedded in markdown (e.g. <div>, <iframe>). Disable for untrusted files."
+  },
+  "markdown.security.sanitizeHtml": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Sanitize Raw HTML",
+    "category": "Markdown Preview",
+    "subCategory": "Security",
+    "order": 910,
+    "description": "Strip dangerous tags and attributes from embedded raw HTML, even when raw HTML is allowed."
+  },
+  "markdown.security.allowScripts": {
+    "type": "boolean",
+    "defaultValue": false,
+    "title": "Allow <script> Execution",
+    "category": "Markdown Preview",
+    "subCategory": "Security",
+    "order": 920,
+    "markdownDescription": "⚠️ Execute `<script>` tags embedded in markdown. Strongly discouraged — only enable for fully trusted local files."
+  },
+  "markdown.export.includeStyles": {
+    "type": "boolean",
+    "defaultValue": true,
+    "title": "Embed Styles in Export",
+    "category": "Markdown Preview",
+    "subCategory": "Export",
+    "order": 1000,
+    "description": "Embed the preview theme's CSS directly into exported HTML files."
+  },
+  "markdown.export.theme": {
+    "type": "select",
+    "defaultValue": "match-preview",
+    "title": "Export Theme",
+    "category": "Markdown Preview",
+    "subCategory": "Export",
+    "order": 1010,
+    "enum": ["match-preview", "light", "dark", "github"],
+    "enumItemLabels": ["Match Current Preview", "Light", "Dark", "GitHub"]
+  },
+  "markdown.export.outputDirectory": {
+    "type": "string",
+    "defaultValue": "",
+    "title": "Export Output Directory",
+    "category": "Markdown Preview",
+    "subCategory": "Export",
+    "order": 1020,
+    "markdownDescription": "Directory for exported files. Leave empty to export next to the source `.md` file."
+  }
+}

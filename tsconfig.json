@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@mscode/api": [
+        ".mscode/types/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    ".mscode/types/**/*"
+  ]
+}

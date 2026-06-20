@@ -1,0 +1,34 @@
+{
+  "id": "sourav.markdown-previewer",
+  "name": "Markdown Previewer",
+  "version": "1.0.0",
+  "description": "A fully-featured Markdown preview engine with GFM, math, Mermaid diagrams, syntax-highlighted code blocks, table of contents, frontmatter rendering, and HTML/PDF export.",
+  "category": "Other",
+  "tags": ["markdown", "preview", "mermaid", "math", "katex", "syntax-highlighting", "export"],
+  "icon": "assets/icon.png",
+  "iconColor": "#42a5f5",
+  "iconLetter": "M",
+  "source": "src/main.tsx",
+  "main": "dist/main.js",
+  "activates": [
+    "onLanguage:markdown",
+    "onCommand:markdown.preview",
+    "onCommand:markdown.preview.exportHtml",
+    "onCommand:markdown.preview.exportPdf",
+    "onCommand:markdown.preview.copyAsHtml",
+    "onCommand:markdown.preview.refresh"
+  ],
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "license": "LICENSE.txt",
+  "contributes": {
+    "commands": [
+      { "id": "markdown.preview",            "title": "Markdown: Open Preview",          "icon": "open-preview" },
+      { "id": "markdown.preview.exportHtml", "title": "Markdown: Export as HTML…",       "icon": "export" },
+      { "id": "markdown.preview.exportPdf",  "title": "Markdown: Print / Export as PDF…","icon": "file-pdf" },
+      { "id": "markdown.preview.copyAsHtml", "title": "Markdown: Copy Rendered as HTML", "icon": "copy" },
+      { "id": "markdown.preview.refresh",    "title": "Markdown: Refresh Preview",       "icon": "refresh" }
+    ],
+    "configuration": "config/settings.json"
+  }
+}

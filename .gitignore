@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.mscode/
+*.msxt
+*.zip
+.DS_Store
+.git
