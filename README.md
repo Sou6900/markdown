@@ -92,10 +92,9 @@ Contributions, issues, and feature requests are welcome! If you're a developer a
 
 1. **Fork** the repository: [Sou6900/markdown-previewer](https://github.com/Sou6900/markdown-previewer)
 2. **Clone** your fork locally:
-   ```bash
+```bash
    git clone [https://github.com/](https://github.com/)<your-username>/markdown-previewer.git
    cd markdown-previewer
-
 ```
 
 3. **Install Dependencies**:
